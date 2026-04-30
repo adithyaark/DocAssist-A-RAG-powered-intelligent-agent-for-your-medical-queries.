@@ -138,7 +138,7 @@ def check_login():
         st.session_state["logged_in"] = False
 
     if not st.session_state["logged_in"]:
-        st.title("🔒 Login to MedBot")
+        st.title("🔒 Login to DocAssist")
         with st.form("login_form"):
             username = st.text_input("Username")
             password = st.text_input("Password", type="password")
@@ -163,11 +163,11 @@ def main():
   if not check_login():
       return
 
-  st.title("Ask MedBot!")
+  st.title("Ask DocAssist!")
 
   with st.sidebar:
       st.header("Document Upload")
-      st.write("Upload a PDF to expand the MedBot knowledge base.")
+      st.write("Upload a PDF to expand the DocAssist knowledge base.")
       uploaded_file = st.file_uploader("Choose a PDF file", type=["pdf"])
       if uploaded_file is not None:
           if st.button("Process Document"):
