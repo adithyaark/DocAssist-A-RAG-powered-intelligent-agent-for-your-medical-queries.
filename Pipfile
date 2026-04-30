@@ -16,6 +16,7 @@ langchain-community = "*"
 faiss-cpu = "*"
 pypdf = "*"
 sentence-transformers = "*"
+torchvision = "*"
 
 [dev-packages]
 pytest = "*"
