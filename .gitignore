@@ -1,0 +1,10 @@
+﻿# Environments and Caches
+.venv/
+__pycache__/
+.pytest_cache/
+
+# Secrets
+.env
+
+# Large Database Files
+vectorstore/
