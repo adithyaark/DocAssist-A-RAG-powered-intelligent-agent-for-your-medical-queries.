@@ -60,9 +60,3 @@ pipenv run streamlit run src/app.py
 
 Your browser will automatically open to `http://localhost:8501`. From there, you can upload PDFs into the sidebar and start asking medical questions!
 
-### 2. (Optional) Launch the FastAPI Backend
-If you wish to use DocAssist headlessly as an API service, start the backend server:
-```bash
-pipenv run uvicorn src.api:app --reload
-```
-The API will be available at `http://localhost:8000`. You can interact with it via `http://localhost:8000/docs`.
