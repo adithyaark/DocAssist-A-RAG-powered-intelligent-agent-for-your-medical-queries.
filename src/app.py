@@ -80,7 +80,7 @@ def get_qa_chain():
     
     # --- NEW CODE (ConversationalRetrievalChain) ---
     custom_prompt_template = """
-If the user gives a greeting or closing ('Hi', 'Hello', 'Thank you', etc.), respond politely to that specific message without summarizing unrelated medical information.
+If the user gives a greeting or closing ('Hi', 'Hello', 'Thank you','hy', 'hello', 'bye','Good mor.. etc.), respond politely to that specific message without summarizing unrelated medical information.
 Use the pieces of information provided in the context to answer the user's question or explain the concept they mentioned.
 If the user types a single word or phrase (like "Arthritis" or "mast cells"), provide a summary or definition of it based on the context.
 If you don't know the answer or the context doesn't have relevant information, just say you don't know. Don't try to make up an answer.
